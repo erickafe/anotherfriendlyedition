@@ -1,0 +1,310 @@
+/*Eliminar margenes por defecto*/
+
+* {
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+}
+
+body {
+    background-image: url(https://i.imgur.com/3kmti8x.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*background-color: #06303aa4;*/
+    background-size: 100%;
+    width: 1170px;
+    height: 750px;
+    margin: auto;
+    background-position: fixed;
+}
+
+header {
+    width: 1170px;
+    height: 250px;
+    /*Separacion desde el cabezal*/
+    margin-top: 0px;
+}
+
+nav {
+    width: 750px;
+    height: 50px;
+}
+
+main {
+    width: 1170px;
+    height: 400px;
+    margin-top: -35px;
+}
+
+footer {
+    width: 750px;
+    height: 50px;
+}
+
+section#banner {
+    width: 920px;
+    height: 250px;
+    float: left;
+    /*background-color: rgba(9, 23, 61, 0.589);*/
+}
+
+#slogan {
+    margin: 1rem;
+    padding: 5rem;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
+section#logo {
+    width: 250px;
+    height: 125px;
+    float: left;
+    /*background-color: gray;*/
+    /*Fuente Logotipo*/
+    font-family: robo;
+    font-size: 60px;
+    text-align: center;
+}
+
+#log {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#boton {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: right;
+}
+
+section#login {
+    width: 250px;
+    height: 125px;
+    float: left;
+    /*background-color: green;*/
+}
+
+aside#left {
+    width: 200px;
+    height: 400px;
+    float: left;
+    /*background-color: greenyellow;*/
+}
+
+article {
+    width: 850px;
+    height: 400px;
+    float: left;
+    /*background-color: rgba(18, 18, 94, 0.342);*/
+}
+
+#pres {
+    text-align: justify;
+    font-family: Just Alice;
+    font-size: 40px;
+    padding: 1rem;
+    font-weight: bold;
+    text-shadow: rgb(0, 0, 0) 3px 3px 5px; 
+    /*text-align: center;*/
+}
+
+#foto {
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    position: relative;
+    margin: -05px auto;
+    width: 90%;
+    padding: 0.7rem;
+}
+
+#foto1 {
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    position: relative;
+    margin: -05px auto;
+    width: 90%;
+    padding: 0.7rem;
+}
+
+aside#right {
+    width: 200px;
+    height: 400px;
+    float: left;
+    /*background-color: blueviolet;*/
+}
+
+footer {
+    width: 100%;
+    /* background-color: brown;*/
+}
+
+#texto {
+    margin: 1rem;
+    padding: 1rem;
+    /* IMPORTANTE */
+    text-align: center;
+    font-family: Arial Bold, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+
+/*Menú Principal*/
+
+/*Esto es la otra parte del menu*/
+
+header#menu {
+    margin-top: -90px;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+}
+/*No tocar CSS anterior a nav*/
+
+nav#men {
+    top: -20px;
+    position: absolute;
+    margin: 20px auto;
+    /*tamaño del menu por defecto asignada en 1000px*/
+    /*Asignada a 1170 px por body*/
+    max-width: 2000px;
+    width: 1170px;
+}
+
+nav#men ul {
+    list-style: none;
+}
+
+nav#men>ul {
+    display: table;
+    width: 100%;
+    background: rgba(5, 5, 5, 0.623);
+    position: relative;
+}
+
+nav#men>ul li {
+    display: table-cell;
+}
+
+/*Submenu*/
+
+nav#men>ul>li:hover>ul {
+    display: block;
+    height: 100%;
+}
+
+nav#men>ul>li>ul {
+    display: block;
+    position: absolute;
+    background: rgba(2, 8, 15, 0.445);
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav#men>ul li a {
+    color: #fff;
+    display: block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav#men>ul>li>ul>li a:hover {
+    background: #3b0a0a;
+}
+
+nav#men>ul>li>a span {
+    background: #174459;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -55px;
+}
+
+nav#men>ul>li>a:hover>span {
+    top: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+/*Colores*/
+
+nav#men ul li a .primero {
+    background: #610e0e;
+}
+
+nav#men ul li a .segundo {
+    background: #06303a;
+}
+
+nav#men ul li a .tercero {
+    background: #0e6156;
+}
+
+/*Diseño de Texto*/
+#textin{
+    font-family: Just Alice;
+    font-size: 20pt;
+}
+
+/*Redes Sociales*/
+#fb{
+    width: 80px;
+    float: right;
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    position: relative;
+    margin: -05px auto;
+    padding: 0.7rem;
+}
+#gm{
+    width: 80px;
+    float: right;
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    position: relative;
+    margin: -05px auto;
+    padding: 0.7rem;
+}
+#tl{
+    width: 80px;
+    float: right;
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    position: relative;
+    margin: -05px auto;
+    padding: 0.7rem;
+}
+/*Diseños de texto*/
+#textin{
+    font-family: Just Alice;
+    font-size: 20pt;
+}
